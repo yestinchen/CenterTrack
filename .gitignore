@@ -5,12 +5,12 @@ centertrack_models/*
 */slurm-*.out
 src/slurm/
 results/*
-src/lib/models/networks/DCNv2
-src/lib/models/networks/DCNv2_04
-src/lib/models/networks/DCNv2_10
-src/lib/model/networks/DCNv2
-src/lib/model/networks/DCNv2_04
-src/lib/model/networks/DCNv2_10
+src/centertrack/models/networks/DCNv2
+src/centertrack/models/networks/DCNv2_04
+src/centertrack/models/networks/DCNv2_10
+src/centertrack/model/networks/DCNv2
+src/centertrack/model/networks/DCNv2_04
+src/centertrack/model/networks/DCNv2_10
 .idea/
 legacy/*
 models/*
@@ -131,3 +131,7 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+models/
+/src/tools/nuscenes-devkit
+/src/tools/nuscenes-devkit-alpha02

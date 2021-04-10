@@ -7,15 +7,15 @@ import torch
 import numpy as np
 from progress.bar import Bar
 
-from model.data_parallel import DataParallel
-from utils.utils import AverageMeter
+from .model.data_parallel import DataParallel
+from .utils.utils import AverageMeter
 
-from model.losses import FastFocalLoss, RegWeightedL1Loss
-from model.losses import BinRotLoss, WeightedBCELoss
-from model.decode import generic_decode
-from model.utils import _sigmoid, flip_tensor, flip_lr_off, flip_lr
-from utils.debugger import Debugger
-from utils.post_process import generic_post_process
+from .model.losses import FastFocalLoss, RegWeightedL1Loss
+from .model.losses import BinRotLoss, WeightedBCELoss
+from .model.decode import generic_decode
+from .model.utils import _sigmoid, flip_tensor, flip_lr_off, flip_lr
+from .utils.debugger import Debugger
+from .utils.post_process import generic_post_process
 
 class GenericLoss(torch.nn.Module):
   def __init__(self, opt):

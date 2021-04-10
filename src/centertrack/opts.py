@@ -395,7 +395,7 @@ class opts(object):
       'tracking,ddd': 'nuscenes'
     }
     opt = self.parse()
-    from dataset.dataset_factory import dataset_factory
+    from centertrack.dataset.dataset_factory import dataset_factory
     train_dataset = default_dataset_info[opt.task] \
       if opt.task in default_dataset_info else 'coco'
     dataset = dataset_factory[train_dataset]

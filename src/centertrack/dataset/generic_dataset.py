@@ -13,9 +13,9 @@ import pycocotools.coco as coco
 import torch
 import torch.utils.data as data
 
-from utils.image import flip, color_aug
-from utils.image import get_affine_transform, affine_transform
-from utils.image import gaussian_radius, draw_umich_gaussian
+from centertrack.utils.image import flip, color_aug
+from centertrack.utils.image import get_affine_transform, affine_transform
+from centertrack.utils.image import gaussian_radius, draw_umich_gaussian
 import copy
 
 class GenericDataset(data.Dataset):

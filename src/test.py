@@ -12,11 +12,11 @@ from progress.bar import Bar
 import torch
 import copy
 
-from opts import opts
-from logger import Logger
-from utils.utils import AverageMeter
-from dataset.dataset_factory import dataset_factory
-from detector import Detector
+from centertrack.opts import opts
+from centertrack.logger import Logger
+from centertrack.utils.utils import AverageMeter
+from centertrack.dataset.dataset_factory import dataset_factory
+from centertrack.detector import Detector
 
 
 class PrefetchDataset(torch.utils.data.Dataset):

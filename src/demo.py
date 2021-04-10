@@ -10,8 +10,8 @@ import cv2
 import json
 import copy
 import numpy as np
-from opts import opts
-from detector import Detector
+from centertrack.opts import opts
+from centertrack.detector import Detector
 
 
 image_ext = ['jpg', 'jpeg', 'png', 'webp']

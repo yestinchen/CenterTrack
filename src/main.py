@@ -7,12 +7,12 @@ import os
 
 import torch
 import torch.utils.data
-from opts import opts
-from model.model import create_model, load_model, save_model
-from model.data_parallel import DataParallel
-from logger import Logger
-from dataset.dataset_factory import get_dataset
-from trainer import Trainer
+from centertrack.opts import opts
+from centertrack.model.model import create_model, load_model, save_model
+from centertrack.model.data_parallel import DataParallel
+from centertrack.logger import Logger
+from centertrack.dataset.dataset_factory import get_dataset
+from centertrack.trainer import Trainer
 
 def get_optimizer(opt, model):
   if opt.optim == 'adam':

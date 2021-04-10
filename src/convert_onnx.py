@@ -16,10 +16,10 @@ from progress.bar import Bar
 import torch
 import copy
 
-from model.model import create_model, load_model
-from opts import opts
-from dataset.dataset_factory import dataset_factory
-from detector import Detector
+from centertrack.model.model import create_model, load_model
+from centertrack.opts import opts
+from centertrack.dataset.dataset_factory import dataset_factory
+from centertrack.detector import Detector
 
 
 def convert_onnx(opt):
